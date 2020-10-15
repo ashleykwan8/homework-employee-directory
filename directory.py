@@ -30,7 +30,8 @@ def get_employee_details():
     # We have a name, and it's in our directory. Return that info.
     else:
         employee_info = employee_directory.get(name.lower())
-        return render_template("employee_details.html", details=employee_info)
+        return render_template("employee_details.html", 
+                                details=employee_info)
 
     # If we didn't return the employee details page, send the user back to the
     # page they were on before.
